@@ -1,8 +1,4 @@
-# tidy-jsdoc
-
-[![Build Status](https://travis-ci.org/julie-ng/tidy-jsdoc.svg?branch=master)](https://travis-ci.org/julie-ng/tidy-jsdoc)
-[![Known Vulnerabilities](https://snyk.io//test/github/julie-ng/tidy-jsdoc/badge.svg?targetFile=package.json)](https://snyk.io//test/github/julie-ng/tidy-jsdoc?targetFile=package.json)
-
+# jsdoc-template
 A minimalist and clean [jsdoc](https://jsdoc.app/index.html) template. 
 
  ### Features
@@ -10,24 +6,14 @@ A minimalist and clean [jsdoc](https://jsdoc.app/index.html) template.
  - Custom styles via [CSS variables](#adjusting-theme-with-css-variables)
  - Code syntax highlighting via [Prism.js](https://prismjs.com/)
 
-## Preview
-
-Note Latest Version 1.0 is considered a _breaking change_ because the design changes significantly. 
-
 #### Examples
 
 - [Newton Graph Library](https://julie-ng.github.io/newtonjs-graph/)
-- Using tidy-jsdoc? Open an issue to add your documentation here.
+- Using @appku/jsdoc-template? Open an issue to add your documentation here.
 
 <img src="./images/v1-preview-newtonjs.png" alt="Version 1.0 - Preview" style="max-width:100%;">
 
 Based on the [default jsdoc template](https://github.com/jsdoc/jsdoc/tree/master/templates) and inspired in design by [vue.js documentation](https://vuejs.org/v2/api/) and [docsify](https://docsify.js.org).
-
-#### Looking for the old design?
-
-If you want keep the old design, version your `package.json` appropriately. Preview old designs in the [images folder](./images/).
-
-Note: the old designs ^0.3.0 will not be updated or maintained.
 
 ## Usage
 
@@ -36,7 +22,7 @@ Note: the old designs ^0.3.0 will not be updated or maintained.
 To use this jsdoc template in a project, first install the packages:
 
 ```
-npm install --save-dev jsdoc tidy-jsdoc
+npm install --save-dev jsdoc @appku/jsdoc-template
 ```
 
 ### Generate Docs
@@ -52,7 +38,7 @@ jsdoc --readme README.md -c jsdoc.json
 Then configure jsdoc to use the tidy template. Below is an example `jsdoc.json` configuration file. Be sure to adjust
 
 - **template**  
-	Points to `./node_modules/tidy-jsdoc`
+	Points to `./node_modules/@appku/jsdoc-template`
 
 - **prism-theme**  
 	Optionally pick a prismjs theme for styling your code. Defaults to "prism-tomorrow-night". Choose from templates available in [`./static/styles/vendor/`](./static/styles/vendor/) folder
@@ -83,7 +69,7 @@ Then configure jsdoc to use the tidy template. Below is an example `jsdoc.json` 
     "excludePattern": "(^|\\/|\\\\)_"
   },
   "opts": {
-    "template": "./node_modules/tidy-jsdoc",
+    "template": "./node_modules/@appku/jsdoc-template",
     "prism-theme": "prism-custom",
     "encoding": "utf8",
     "destination": "./docs/",
