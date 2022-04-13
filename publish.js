@@ -11,7 +11,6 @@ var template = require('jsdoc/template');
 var util = require('util');
 
 var htmlsafe = helper.htmlsafe;
-var linkto = helper.linkto;
 var resolveAuthorLinks = helper.resolveAuthorLinks;
 var scopeToPunc = helper.scopeToPunc;
 var hasOwnProp = Object.prototype.hasOwnProperty;
@@ -20,6 +19,35 @@ var data;
 var view;
 
 var outdir = path.normalize(env.opts.destination);
+
+function linkto(longname, linkText, cssClass, fragmentId) {
+    //need to handle module links which the template helper doesn't do well with.
+    if (/^module:/.test(longname)) {
+        let firstNode = helper.longnamesToTree([longname]);
+        if (longname === linkText) {
+            linkText = null; //null out so will match proper name
+        }
+        let recursiveMatch = (node) => {
+            if (node != null) {
+                let aLink = helper.linkto(node.name, linkText || node.name, cssClass, fragmentId);
+                if (/^<a.+a>/.test(aLink) === false && node.children) { //exact text match, no html link found
+                    for (let n in node.children) {
+                        aLink = recursiveMatch(node.children[n]);
+                        if (aLink != null) {
+                            return aLink;
+                        }
+                    }
+                } else {
+                    return aLink;
+                }
+            }
+            return null;
+        }
+        return recursiveMatch({ name: longname, children: firstNode });
+    } else { //standard link processing (non-module)
+        return helper.linkto(longname, linkText, cssClass, fragmentId);
+    }
+}
 
 function find(spec) {
     return helper.find(data, spec);

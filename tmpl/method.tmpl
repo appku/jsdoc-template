@@ -87,7 +87,7 @@ var hasMethodSummary = (data.kind !== 'class')
     <?js data.returns.forEach(function(r) { ?>
         <li class="method-returns">
             <?js r.type.names.forEach(function(t) { ?>
-                <code><?js= self.htmlsafe(t) ?></code>
+                <code><?js= self.linkto(t, t) ?></code>
             <?js }); ?>
             <?js if (r.description) { ?>
                 <?js= r.description ?>
