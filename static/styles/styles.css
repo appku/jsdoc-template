@@ -78,8 +78,15 @@ img + p {
   margin-top: 1em;
 }
 
-ul {
+ul, ol {
   margin: 1em 0;
+}
+
+@counter-style padded {
+  pad: 2 "0";
+}
+ol {
+  list-style: padded;
 }
 
 tt, code, kbd, samp {
@@ -395,7 +402,7 @@ article.event, article.member, article.method {
 
 li.method-returns,
 .method-params li {
-  margin-bottom: 1em;
+  margin-bottom: 0.25rem;
 }
 
 .method-source a:link, .method-source a:visited {

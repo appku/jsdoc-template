@@ -29,8 +29,16 @@ img {
   }
 }
 
-ul {
+ul, ol {
   margin: 1em 0;
+}
+
+@counter-style padded {
+    pad: 2 "0";
+}
+
+ol {
+    list-style: padded;
 }
 
 tt, code, kbd, samp {
