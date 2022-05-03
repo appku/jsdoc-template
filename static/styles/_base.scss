@@ -34,11 +34,12 @@ ul, ol {
 }
 
 @counter-style padded {
-    pad: 2 "0";
+    system: fixed -9;
+    symbols: '\2D\30\39' '\2D\30\38' '\2D\30\37' '\2D\30\36' '\2D\30\35' '\2D\30\34' '\2D\30\33' '\2D\30\32' '\2D\30\31' '\30\30' '\30\31' '\30\32' '\30\33' '\30\34' '\30\35' '\30\36' '\30\37' '\30\38' '\30\39';
 }
 
 ol {
-    list-style: padded;
+  list-style: padded;
 }
 
 tt, code, kbd, samp {
