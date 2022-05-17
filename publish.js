@@ -665,7 +665,7 @@ exports.publish = function (taffyData, opts, tutorials) {
     // Remove Page title for Main Page (set in Readme instead)
     generate('', '',
         packages.concat(
-            [{ kind: 'mainpage', readme: opts.readme, longname: (opts.mainpagetitle) ? opts.mainpagetitle : 'Main Page' }]
+            [{ kind: 'mainpage', readme: opts.readme, longname: (opts.mainpagetitle) ? opts.mainpagetitle : 'Introduction' }]
         ).concat(files),
         indexUrl);
 
