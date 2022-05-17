@@ -32,14 +32,14 @@
       >
     </a>
   <?js } ?>
-  <?js if (Array.isArray(env.conf.metadata.links) && env.conf.metadata.links.length) { ?>
-  <?js } ?>
   <h1><a href="./index.html"><?js= env.conf.metadata.title ?></a></h1>
+  <?js if (Array.isArray(env.conf.metadata.links) && env.conf.metadata.links.length) { ?>
   <ul class="meta-links">
     <?js for (var link of env.conf.metadata.links) { ?>
     <li><a href="<?js=link.url?>"><i class="bi bi-<?js=link.icon?>"></i></a></li>
     <?js } ?>
   </ul>
+  <?js } ?>
   <nav class="layout-nav">
     <ul class="nav-introduction">
       <li class="nav-item"><a href="./index.html">Introduction</a></li>
