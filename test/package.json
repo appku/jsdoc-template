@@ -1,0 +1,18 @@
+{
+    "name": "test",
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "docs": "npx jsdoc -c jsdoc.json -u tutorials --readme README.md",
+        "serve-docs": "npx serve ./docs"
+    },
+    "devDependencies": {
+        "jsdoc": "^3.6.10",
+        "serve": "^13.0.2"
+    },
+    "license": "ISC"
+}

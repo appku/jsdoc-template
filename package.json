@@ -17,20 +17,22 @@
     ],
     "homepage": "https://github.com/appku/jsdoc-template",
     "scripts": {
+        "build": "gulp build",
+        "fonts": "gulp fonts",
         "sass": "gulp sass",
-        "sass:watch": "gulp sass:watch",
-        "preflight": "npm run sass & npm audit"
+        "sass:watch": "gulp sass:watch"
     },
     "dependencies": {
+        "bootstrap-icons": "^1.8.2",
         "jsdoc": "^3.6.10",
         "taffydb": "^2.7.3",
         "util": "^0.10.3"
     },
     "devDependencies": {
         "bootstrap": "^4.3.1",
-        "marked": "^4.0.15",
         "gulp": "^4.0.2",
         "gulp-sass": "^5.1.0",
+        "marked": "^4.0.15",
         "sass": "^1.45.2",
         "tar": "^6.1.11"
     },

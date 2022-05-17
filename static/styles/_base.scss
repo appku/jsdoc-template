@@ -1,68 +1,74 @@
 body {
-  font-family: var(--body-font);
-  font-size: var(--base-font-size);
-  line-height: var(--base-line-height);
-  color: var(--text-color);
-  -webkit-font-smoothing: antialiased;
-  text-size-adjust: 100%;
+    font-family: var(--body-font);
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 a {
-  text-decoration: none;
-  color: var(--link-color);
+    text-decoration: none;
+    color: var(--link-color);
 
-  &:hover, &:active {
-    text-decoration: underline;
-    color: var(--link-hover-color);
-  }
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: underline;
+        color: var(--link-hover-color);
+    }
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 
-  & + p {
-    margin-top: 1em;
-  }
+    &+p {
+        margin-top: 1em;
+    }
 }
 
-ul, ol {
-  margin: 1em 0;
+ul,
+ol {
+    margin: 1em 0;
 }
 
 @counter-style padded {
     system: fixed -9;
-    symbols: '\2D\30\39' '\2D\30\38' '\2D\30\37' '\2D\30\36' '\2D\30\35' '\2D\30\34' '\2D\30\33' '\2D\30\32' '\2D\30\31' '\30\30' '\30\31' '\30\32' '\30\33' '\30\34' '\30\35' '\30\36' '\30\37' '\30\38' '\30\39';
+    symbols: '\2D\30\39''\2D\30\38''\2D\30\37''\2D\30\36''\2D\30\35''\2D\30\34''\2D\30\33''\2D\30\32''\2D\30\31''\30\30''\30\31''\30\32''\30\33''\30\34''\30\35''\30\36''\30\37''\30\38''\30\39';
 }
 
 ol {
-  list-style: padded;
+    list-style: padded;
 }
 
-tt, code, kbd, samp {
-  font-family: var(--code-font);
+tt,
+code,
+kbd,
+samp {
+    font-family: var(--code-font);
 }
 
 code {
-	display: inline-block;
-  background-color: var(--code-bg-color);
-	padding: 2px 6px 0px;
-	border-radius: 3px;
-	color: var(--code-attention-color);
+    display: inline-block;
+    background-color: var(--code-bg-color);
+    padding: 2px 6px 0px;
+    border-radius: 3px;
+    color: var(--code-attention-color);
 }
 
 .prettyprint {
-  &.source {
-    code {
-      &:not([class*="language-"]) {
-        display: block;
-        padding: 20px;
-        overflow: scroll;
-        color: var(--code-color);
-      }
+    &.source {
+        code {
+            &:not([class*="language-"]) {
+                display: block;
+                padding: 20px;
+                overflow: scroll;
+                color: var(--code-color);
+            }
+        }
     }
-  }
 }

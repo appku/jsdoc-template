@@ -1,3 +1,4 @@
+@import "bootstrap-icons.scss";
 @import "vars";
 @import "base";
 @import "layout";
@@ -10,31 +11,31 @@
 // Override Prism.js
 
 pre[class*="language-"] {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 code[class*="language-"],
 pre[class*="language-"] {
-  text-shadow: none;
-  border: none;
+    text-shadow: none;
+    border: none;
 
-	&.source-page {
-		font-size: 0.9em;
-	}
+    &.source-page {
+        font-size: 0.9em;
+    }
 }
 
 .line-numbers .line-numbers-rows {
-  border-right: none;
+    border-right: none;
 }
 
 .source-page {
-	font-size: 14px;
+    font-size: 14px;
 
-	code {
-		z-index: 1;
-	}
+    code {
+        z-index: 1;
+    }
 
-	.line-height.temporary {
-		z-index: 0;
-	}
+    .line-height.temporary {
+        z-index: 0;
+    }
 }

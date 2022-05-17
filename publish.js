@@ -211,7 +211,7 @@ function addAttribs(f) {
     var attribs = helper.getAttribs(f);
     if (attribs.length) {
         var str = ''
-        attribs.forEach(function(a) {
+        attribs.forEach(function (a) {
             str = str + `<span class="method-type-signature is-${a}">${a}</span>`;
         })
         f.attribs = str
