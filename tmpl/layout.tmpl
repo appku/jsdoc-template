@@ -39,6 +39,9 @@
     </a>
   <?js } ?>
   <h1><a href="./index.html"><?js= env.conf.metadata.title ?></a></h1>
+  <?js if (this.package && this.package.version) { ?>
+  <h2>v<?js= this.package.version ?></h2>
+  <?js } ?>
   <?js if (Array.isArray(env.conf.metadata.links) && env.conf.metadata.links.length) { ?>
   <ul class="meta-links">
     <?js for (var link of env.conf.metadata.links) { ?>

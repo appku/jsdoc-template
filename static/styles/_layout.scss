@@ -29,10 +29,17 @@
 
     h1 {
         display: block;
-        margin-bottom: var(--nav-title-margin-bottom);
         font-size: var(--nav-title-size);
         font-weight: var(--nav-title-font-weight);
         text-align: var(--nav-title-align);
+        margin: 0;
+    }
+
+    h2 {
+        font-size: var(--nav-title-size);
+        text-align: var(--nav-title-align);
+        color: var(--subheading-color);
+        margin: 0;
     }
 
     // Logo
@@ -44,6 +51,7 @@
 }
 
 .layout-nav {
+    margin-top: 2rem;
     margin-bottom: 2rem;
 
     ul {
@@ -85,6 +93,7 @@ ul.meta-links {
     list-style: none;
     text-align: center;
     padding: 0;
+    margin-bottom: 0;
     li {
         display: inline;
         padding: 0 0.25rem;

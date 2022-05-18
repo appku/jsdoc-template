@@ -471,7 +471,6 @@ exports.publish = function (taffyData, opts, tutorials) {
 
     var conf = env.conf.templates || {};
     conf.default = conf.default || {};
-
     var templatePath = path.normalize(opts.template);
     view = new template.Template(path.join(templatePath, 'tmpl'));
 
@@ -495,7 +494,6 @@ exports.publish = function (taffyData, opts, tutorials) {
     data = helper.prune(data);
     data.sort('longname, version, since');
     helper.addEventListeners(data);
-
     var sourceFiles = {};
     var sourceFilePaths = [];
     data().each(function (doclet) {
@@ -538,15 +536,14 @@ exports.publish = function (taffyData, opts, tutorials) {
 
     // update outdir if necessary, then create outdir
     var packageInfo = (find({ kind: 'package' }) || [])[0];
-    if (packageInfo && packageInfo.name) {
-        outdir = path.join(outdir, packageInfo.name, (packageInfo.version || ''));
-    }
+    // if (packageInfo && packageInfo.name) {
+    //     outdir = path.join(outdir, packageInfo.name, (packageInfo.version || ''));
+    // }
     fs.mkPath(outdir);
 
     // copy the template's static files to outdir
     var fromDir = path.join(templatePath, 'static');
     var staticFiles = fs.ls(fromDir, 3);
-
     staticFiles.forEach(function (fileName) {
         var toDir = fs.toDir(fileName.replace(fromDir, outdir));
         fs.mkPath(toDir);
@@ -646,7 +643,7 @@ exports.publish = function (taffyData, opts, tutorials) {
     view.tutoriallink = tutoriallink;
     view.htmlsafe = htmlsafe;
     view.outputSourceFiles = outputSourceFiles;
-
+    view.package = packageInfo;
     // once for all
     view.nav = buildNav(members);
     attachModuleSymbols(find({ longname: { left: 'module:' } }), members.modules);
@@ -661,7 +658,6 @@ exports.publish = function (taffyData, opts, tutorials) {
     // index page displays information from package.json and lists files
     var files = find({ kind: 'file' }),
         packages = find({ kind: 'package' });
-
     // Remove Page title for Main Page (set in Readme instead)
     generate('', '',
         packages.concat(
