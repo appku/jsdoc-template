@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <?js if (title) { ?>
     <title><?js= env.conf.metadata.title ?>: <?js= title ?></title>
+    <?js } else { ?>
+    <title><?js= env.conf.metadata.title || title || "Home" ?></title>
+    <?js } ?>
     <?js if (env.conf.opts.hasOwnProperty('prism-theme')) { ?>
       <link type="text/css" rel="stylesheet" href="styles/vendor/<?js= env.conf.opts['prism-theme'] ?>.css">
     <?js } else { ?>
