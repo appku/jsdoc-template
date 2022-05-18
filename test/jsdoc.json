@@ -5,7 +5,7 @@
     ],
     "source": {
         "include": [
-            "./"
+            "./", "package.json"
         ],
         "exclude": [
             "./node_modules",
