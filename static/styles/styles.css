@@ -6901,7 +6901,7 @@ code {
   right: 0;
   width: var(--nav-width);
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .layout-header h1 {
   display: block;
@@ -6917,7 +6917,7 @@ code {
   margin: 0;
 }
 .layout-header img {
-  max-width: 120px;
+  max-width: 100%;
   display: block;
   margin: 1em auto;
 }
@@ -6978,7 +6978,7 @@ ul.nav-introduction {
 }
 
 .nav-heading {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font-weight: 500;
 }
 .nav-heading a {

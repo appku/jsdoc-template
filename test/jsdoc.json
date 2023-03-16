@@ -3,6 +3,9 @@
         "plugins/markdown",
         "plugins/underscore"
     ],
+    "markdown": {
+        "idInHeadings": true
+    },
     "source": {
         "include": [
             "./", "package.json"
@@ -29,7 +32,7 @@
     },
     "metadata": {
         "title": "AppKu: JSDoc Template (Test)",
-        "logo": "https://avatars.githubusercontent.com/u/76977527?s=400",
+        "logo": "https://static.appku.com/logo/color/png/appku-ninja-slogan-horizontal-256x86.png",
         "links": [
             { "icon": "github", "url": "https://github.com/appku/jsdoc-template" },
             { "icon": "twitter", "url": "https://twitter.com" }

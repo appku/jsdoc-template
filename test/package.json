@@ -7,8 +7,8 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "docs": "npx jsdoc -c jsdoc.json -u tutorials --readme README.md",
-        "serve-docs": "npx serve ./docs"
+        "start": "npx serve ./docs",
+        "docs": "npx jsdoc -c jsdoc.json -u tutorials --readme README.md"
     },
     "devDependencies": {
         "jsdoc": "^3.6.10",

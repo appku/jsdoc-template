@@ -367,32 +367,32 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
                     nav.push(buildNavHeading(buildNavType(item.kind, linktoFn(item.longname, displayName))))
                 }
 
-                if (members.length) {
-                    members.forEach(function (member) {
-                        if (member.inherited && conf.showInheritedInNav === false) {
-                            return
-                        }
-                        nav.push(buildNavItem(buildNavType(member.kind, linkto(member.longname, member.name))))
-                    })
-                }
+                // if (members.length) {
+                //     members.forEach(function (member) {
+                //         if (member.inherited && conf.showInheritedInNav === false) {
+                //             return
+                //         }
+                //         nav.push(buildNavItem(buildNavType(member.kind, linkto(member.longname, member.name))))
+                //     })
+                // }
 
-                if (methods.length) {
-                    methods.forEach(function (method) {
-                        if (method.inherited && conf.showInheritedInNav === false) {
-                            return
-                        }
-                        nav.push(buildNavItem(buildNavType(method.kind, linkto(method.longname, method.name))))
-                    })
-                }
+                // if (methods.length) {
+                //     methods.forEach(function (method) {
+                //         if (method.inherited && conf.showInheritedInNav === false) {
+                //             return
+                //         }
+                //         nav.push(buildNavItem(buildNavType(method.kind, linkto(method.longname, method.name))))
+                //     })
+                // }
 
-                if (events.length) {
-                    events.forEach(function (event) {
-                        if (event.inherited && conf.showInheritedInNav === false) {
-                            return
-                        }
-                        nav.push(buildNavItem(buildNavType(event.kind, linkto(event.longname, event.name))))
-                    })
-                }
+                // if (events.length) {
+                //     events.forEach(function (event) {
+                //         if (event.inherited && conf.showInheritedInNav === false) {
+                //             return
+                //         }
+                //         nav.push(buildNavItem(buildNavType(event.kind, linkto(event.longname, event.name))))
+                //     })
+                // }
 
                 itemsSeen[item.longname] = true
             }
@@ -717,7 +717,6 @@ exports.publish = function (taffyData, opts, tutorials) {
 
         var tutorialPath = path.join(outdir, filename),
             html = view.render('tutorial.tmpl', tutorialData);
-
         // yes, you can use {@link} in tutorials too!
         html = helper.resolveLinks(html); // turn {@link foo} into <a href="foodoc.html">foo</a>
 
