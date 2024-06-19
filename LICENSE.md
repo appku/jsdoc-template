@@ -1,32 +1,40 @@
-# License
+AppKu™ POWER YOUR PROCESS, EMPOWER YOUR TEAM™
 
-Copyright 2022 Append Media, LLC
+Copyright: AppKu™
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+❯ See us online at: 
+❯    https://appku.com
+❯    https://linkedin.com/company/appku
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-The [appku jsdoc-template](https://github.com/appku/jsdoc-template) is free software, licensed under the Apache License, Version 2.0. Commercial and non-commercial use are permitted in compliance with the License. You may obtain a copy of the License at:
+Microsoft Public License (MS-PL)
 
-[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+This license governs use of the accompanying software. If you use the software, you accept this license. If you do not accept the license, do not use the software.
 
-In addition, a copy of the License is included with this distribution.
+1. Definitions
 
-## Warranty
+The terms "reproduce," "reproduction," "derivative works," and "distribution" have the same meaning here as under U.S. copyright law.
 
-As stated in Section 7, "Disclaimer of Warranty," of the License:
+A "contribution" is the original software, or any additions or changes to the software.
 
-> Licensor provides the Work (and each Contributor provides its Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.
+A "contributor" is any person that distributes its contribution under this license.
 
-## Modifications
+"Licensed patents" are a contributor's patent claims that read directly on its contribution.
 
-This template is based on the default [tidy-jsdoc](https://github.com/julie-ng/tidy-jsdoc) template, which is copyright 2017-2018 Julie Ng and licensed under the [Apache 2.0 License](https://github.com/jsdoc3/jsdoc/blob/master/LICENSE.md).
+2. Grant of Rights
 
-This template is based on the default JSDoc template, which is copyright 2011-present Michael Mathews <micmath@gmail.com> and the [contributors to JSDoc](https://github.com/jsdoc3/jsdoc/graphs/contributors) and licensed under the [Apache 2.0 License](https://github.com/jsdoc3/jsdoc/blob/master/LICENSE.md).
+(A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.
 
-For this template, the following originally distributed third-party software has been _**removed**_:
+(B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.
 
-- Open Sans Font (Apache 2.0)
-- Tomorrow Theme for Google Code Prettify (MIT License)
+3. Conditions and Limitations
 
-## Third Party Software
+(A) No Trademark License- This license does not grant you rights to use any contributors' name, logo, or trademarks.
 
-This project introduces new third-party software:
+(B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.
 
-- [Prism](https://github.com/PrismJS/prism) is used for source code formatting. Prism is available for free under the MIT License.
+(C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.
+
+(D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.
+
+(E) The software is licensed "as-is." You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.
